@@ -43,6 +43,11 @@ const Footer = () => {
           <p className="text-background/40 text-xs">
             © {new Date().getFullYear()} Bubbli Digital Services. All rights reserved.
           </p>
+          <div className="mt-2">
+            <a href="/privacy-policy" className="text-background/40 text-xs hover:text-background/60 transition-colors">
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>

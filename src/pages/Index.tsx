@@ -11,15 +11,16 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import WhyChoose from "@/components/sections/WhyChoose";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
+import Testimonials from "@/components/sections/Testimonials";
 
 const Index = () => {
   return (
     <>
       <Helmet>
         <title>Bubbli Digital Services | One-Stop Digital Solution for Local Businesses</title>
-        <meta 
-          name="description" 
-          content="Everything your local business needs to be found online. Websites, Google Maps, WhatsApp & more — simple, affordable, and done-for-you. Starting at ₹2,000." 
+        <meta
+          name="description"
+          content="Everything your local business needs to be found online. Websites, Google Maps, WhatsApp & more — simple, affordable, and done-for-you. Starting at ₹2,000."
         />
         <meta name="keywords" content="website design, local business website, Google Maps setup, WhatsApp business, affordable website India, small business digital services" />
         <meta property="og:title" content="Bubbli Digital Services | One-Stop Digital Solution" />
@@ -40,6 +41,7 @@ const Index = () => {
         <Bundles />
         <HowItWorks />
         <WhyChoose />
+        <Testimonials />
         <CTA />
         <Footer />
       </main>
