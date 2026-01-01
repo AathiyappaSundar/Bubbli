@@ -23,7 +23,7 @@ const HowItWorks = () => {
   const sectionRef = useScrollReveal();
 
   return (
-    <section ref={sectionRef as React.RefObject<HTMLElement>} className="section-padding bg-secondary/30">
+    <section id="how-it-works" ref={sectionRef as React.RefObject<HTMLElement>} className="section-padding bg-secondary/30">
       <div className="container-width">
         <div className="text-center mb-16 scroll-reveal">
           <span className="text-sm font-semibold uppercase tracking-wide text-primary mb-4 block">
@@ -49,7 +49,7 @@ const HowItWorks = () => {
                       {index + 1}
                     </span>
                   </div>
-                  
+
                   <h3 className="text-xl font-bold text-foreground mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
