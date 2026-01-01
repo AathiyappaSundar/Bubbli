@@ -60,6 +60,7 @@ const PrivacyPolicy = () => {
                             </section>
                         </div>
                     </div>
+                </div>
             </main>
             <Footer />
             <FloatingWhatsApp />
