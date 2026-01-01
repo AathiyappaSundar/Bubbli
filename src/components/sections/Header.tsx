@@ -8,12 +8,19 @@ const WHATSAPP_MESSAGE = "Hi! I'm interested in getting a website for my busines
 const Header = () => {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container-width section-padding-x">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" onClick={scrollToTop} className="flex items-center gap-2">
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">B</span>
             </div>
@@ -24,7 +31,7 @@ const Header = () => {
 
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/" onClick={scrollToTop} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Home
             </Link>
             <a href="/#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
