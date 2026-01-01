@@ -2,6 +2,7 @@ import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
     useEffect(() => {
@@ -14,9 +15,9 @@ const PrivacyPolicy = () => {
             <main className="pt-24 pb-16 min-h-screen">
                 <div className="container-width px-4">
                     <div className="max-w-3xl mx-auto">
-                        <a href="/" className="inline-flex items-center text-primary hover:underline mb-8 font-medium">
+                        <Link to="/" className="inline-flex items-center text-primary hover:underline mb-8 font-medium">
                             &larr; Back to Home
-                        </a>
+                        </Link>
                         <div className="max-w-3xl mx-auto prose prose-slate">
                             <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
                             <p className="text-muted-foreground mb-8">Last Updated: January 1, 2025</p>
