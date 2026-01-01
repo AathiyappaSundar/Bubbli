@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container-width section-padding-x">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">B</span>
             </div>
@@ -23,13 +23,16 @@ const Header = () => {
 
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Home
+            </a>
+            <a href="/#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Services
             </a>
-            <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </a>
-            <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               How It Works
             </a>
           </nav>
